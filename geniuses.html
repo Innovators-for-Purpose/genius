@@ -6,16 +6,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <link href="style-index.css" rel="stylesheet">
+    <script src="script.js" type="text/javascript" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </head>
 <body>
-    <header><h1>About the Geniuses</h1></header>
-    <div class="card card-br-top">
-      <img src="images/homepage/group.png" class="card-image card-image-borderradius">
-      <div class="card-content">
-        <p class="card-text">Spring 2023</p>
-        <h2 class="card-header">Dr. Joy Buolamwinu</h2>
-        <button class="card-button">View -></button>
-      </div>
+
+    <header class="titlebox"><h1>About the Geniuses</h1></header>
+
+    <div class="geniusbody">
+      <!-- <card-component>
+        <div slot="paragraph-text">
+          <span>This is card 1</span>
+        </div>
+      </card-component> -->
+      <genius-card>
+          <div slot="Genius Name">Dr. Joy Buolamwinu</div>
+          <img slot="Genius Image" src="images/joy/desktop_card.png" class="card-image card-image-borderradius">
+      </genius-card>
+      <genius-card>
+          <div slot="Genius Name">Millie Dresselhaus</div>
+      </genius-card>
+      <genius-card>
+          <div slot="Genius Name">Sal Khan</div>
+      </genius-card>
+      <genius-card>
+          <div slot="Genius Name">Dr. Danielle Wood</div>
+      </genius-card>
     </div>
+    <footer>
+    </footer>
 </body>
 </html>
