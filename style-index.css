@@ -32,6 +32,7 @@ button {
       rgba(176, 106, 179, 1) 100%
     );
 }
+
 .maincontent {
   color: #404040;
   font-family: "Inter", sans-serif;
@@ -49,6 +50,7 @@ button {
   justify-content: space-around;
   /* border: 2px solid blue; */
 }
+
 .card.reverse {
   flex-direction: row;
 }
@@ -122,6 +124,7 @@ footer {
   border-radius: 0 0 10px 10px;
   padding: 16px;
 }
+
 .genius-card button {
   width: 105px;
   align-self: flex-end;
@@ -130,6 +133,7 @@ footer {
 div.card-text {
   font-size: 14px;
 }
+
 div.card-header {
   margin-top: 6px;
   font-weight: 700;
