@@ -7,6 +7,10 @@ body {
 
 .geniusbody {
     padding:16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
 }
 
 button {
@@ -132,4 +136,10 @@ footer {
     margin-top: 6px;
     font-weight: 700;
     font-size: 18px;
+ }
+
+.card-genius {
+    padding: 20px;
+    align-items: center;
+    
  }
