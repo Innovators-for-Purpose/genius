@@ -1,30 +1,35 @@
 function createComponent(templateId, template) {
-    const templateElement = document.createElement('template');
-    templateElement.setAttribute('id', templateId);
-    templateElement.innerHTML = template;
-    document.body.appendChild(templateElement);
-  
-    // in html:
-    //   <card-component></card-component>
-    customElements.define(templateId, class extends HTMLElement {
+  const templateElement = document.createElement("template");
+  templateElement.setAttribute("id", templateId);
+  templateElement.innerHTML = template;
+  document.body.appendChild(templateElement);
+
+  // in html:
+  //   <card-component></card-component>
+  customElements.define(
+    templateId,
+    class extends HTMLElement {
       constructor() {
         super();
         const template = document.getElementById(templateId);
         const shadowRoot = this.attachShadow({ mode: "open" });
         shadowRoot.appendChild(template.content.cloneNode(true));
-  
+
         // Apply external styles to the shadow DOM
         const linkElem = document.createElement("link");
         linkElem.setAttribute("rel", "stylesheet");
         linkElem.setAttribute("href", "style-index.css");
-  
+
         // Attach the created element to the shadow DOM
         shadowRoot.appendChild(linkElem);
       }
-    });
-  }
+    }
+  );
+}
 
-createComponent('genius-card',`
+createComponent(
+  "genius-card",
+  `
 <div class="card-br-top genius-card">
   <slot name="Genius Image"></slot>
   <div class="card-content genius-card-content">
@@ -33,7 +38,8 @@ createComponent('genius-card',`
     <button class="card-button">View <ion-icon name="arrow-forward-outline"></ion-icon></button>
   </div>
 </div>
-`);
+`
+);
 
 // createComponent('card-component', `
 //     <div class="template-div">
@@ -49,7 +55,8 @@ createComponent('genius-card',`
 // `);
 
 // Usage examples:
-{/*
+{
+  /*
 <card-component>
   <div slot="paragraph-text">
     <span>This is card 1</span>
@@ -61,4 +68,5 @@ createComponent('genius-card',`
 <button-component></button-component>
 <button-component></button-component>
 <button-component></button-component>
-*/}
+*/
+}
