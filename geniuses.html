@@ -29,8 +29,10 @@
     </header>
 
     <div class="geniusbody">
+      <button onclick="carousel(FORWARD)">forward</button>
+      <button onclick="carousel(BACKWARD)">backward</button>
       <div class="carousel">
-        <div class="carousel-group">
+        <div class="carousel-group" id="cardgroup1">
           <genius-card class="card-genius">
             <div slot="Genius Name">Dr. Joy Buolamwinu</div>
             <img
@@ -55,6 +57,9 @@
               class="card-image card-image-borderradius"
             />
           </genius-card>
+        </div>
+
+        <div class="carousel-group" id="cardgroup2">
           <genius-card class="card-genius">
             <div slot="Genius Name">Dr. Danielle Wood</div>
             <img
@@ -80,7 +85,8 @@
             />
           </genius-card>
         </div>
-        <div class="carousel-group">
+
+        <div class="carousel-group" id="cardgroup3">
           <genius-card class="card-genius">
             <div slot="Genius Name">Bob Moses</div>
             <img
@@ -105,6 +111,9 @@
               class="card-image card-image-borderradius"
             />
           </genius-card>
+        </div>
+
+        <div class="carousel-group" id="cardgroup4">
           <genius-card class="card-genius">
             <div slot="Genius Name">Dr. Sangeeta Bhatia</div>
             <img
@@ -130,7 +139,8 @@
             />
           </genius-card>
         </div>
-        <div class="carousel-group">
+
+        <div class="carousel-group" id="cardgroup5">
           <genius-card class="card-genius">
             <div slot="Genius Name">Margret Hamilton</div>
             <img
@@ -149,6 +159,7 @@
           </genius-card>
         </div>
       </div>
+
       <!-- <card-component>
         <div slot="paragraph-text">
           <span>This is card 1</span>

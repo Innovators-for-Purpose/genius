@@ -41,6 +41,31 @@ createComponent(
 `
 );
 
+const carouselGroups = [
+  "cardgroup1",
+  "cardgroup2",
+  "cardgroup3",
+  "cardgroup4",
+  "cardgroup5",
+];
+
+let cardGroup = 0;
+
+function carousel(direction) {
+  if (direction === FORWARD) {
+    if (direction === FORWARD && cardGroup === 4) {
+      return;
+    }
+    cardGroup++;
+    // display carouselgroup according to id
+    // use index
+    // carouselGroups[cardGroup]
+  } else {
+    cardGroup--;
+  }
+}
+const FORWARD = true;
+const BACKWARD = false;
 // createComponent('card-component', `
 //     <div class="template-div">
 //         <h1 class="template-header">Header in template</h1>
