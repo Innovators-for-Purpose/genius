@@ -4,8 +4,6 @@ function createComponent(templateId, template) {
   templateElement.innerHTML = template;
   document.body.appendChild(templateElement);
 
-  // in html:
-  //   <card-component></card-component>
   customElements.define(
     templateId,
     class extends HTMLElement {
@@ -22,23 +20,45 @@ function createComponent(templateId, template) {
 
         // Attach the created element to the shadow DOM
         shadowRoot.appendChild(linkElem);
+        //         <link rel="preconnect" href="https://fonts.googleapis.com">
+        // <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        // <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet"></link>
       }
     }
   );
 }
 
+function setActiveClass(path, element) {
+  if (window.location.pathname === path) {
+    element.classList.add("active");
+  } else {
+    element.classList.remove("active");
+  }
+}
+
 createComponent(
   "genius-card",
-  `
-<div class="card-br-top genius-card">
+  `<div class="card-br-top genius-card">
   <slot name="Genius Image"></slot>
   <div class="card-content genius-card-content">
     <div class="card-text">Spring 2023</div>
     <div class="card-header"><slot name="Genius Name"></slot></div>
     <button class="card-button">View <ion-icon name="arrow-forward-outline"></ion-icon></button>
   </div>
-</div>
-`
+</div>`
+);
+
+createComponent(
+  "nav-bar",
+  `<nav>
+  <div class="navcontent">
+     <p>GENIUS WITHIN</p>
+    <div class="navlinks">
+      <a href="/">About the Geniuses</a>
+      <a href="">The Making of</a>
+      </div>
+  </div>
+  </nav>`
 );
 
 // createComponent('card-component', `
