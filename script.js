@@ -51,17 +51,21 @@ const carouselGroups = [
 
 let cardGroup = 0;
 
+let geniusCards = document.querySelectorAll(".carousel-group");
+
 function carousel(direction) {
   if (direction === FORWARD) {
     if (direction === FORWARD && cardGroup === 4) {
       return;
     }
     cardGroup++;
+    geniusCards[cardGroup].style.display = "flex";
     // display carouselgroup according to id
     // use index
     // carouselGroups[cardGroup]
   } else {
     cardGroup--;
+    geniusCards[cardGroup].style.display = "flex";
   }
 }
 const FORWARD = true;
