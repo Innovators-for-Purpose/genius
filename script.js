@@ -49,20 +49,69 @@ const carouselGroups = [
   "cardgroup5",
 ];
 
+const carouselGroupsDouble = [
+  "doubleCardGroup1",
+  "doubleCardGroup2",
+  "doubleCardGroup3",
+];
+
 let cardGroup = 0;
 
 let geniusCards = document.querySelectorAll(".carousel-group");
 
-geniusCards[cardGroup].style.display = "flex";
+let geniusCardsDouble = document.querySelectorAll(".carouselDouble");
 
-function carousel(direction) {
+// <div class="double"> // display: flex
+//   <div class="single"> // display: flex
+//     <div class="card"></div>
+//     <div class="card"></div>
+//   </div>
+//   <div class="single"> // display: flex
+//     <div class="card"></div>
+//     <div class="card"></div>
+//   </div>
+// </div>
+
+// geniusCards.forEach((element) => {
+//   element.style.display = "none";
+// });
+
+// geniusCardsDouble.forEach((element) => {
+//   element.style.display = "none";
+// });
+
+if (document.URL.includes("geniuses.html")) {
+  geniusCardsDouble.forEach((element) => {
+    element.style.display = "none";
+  });
+
+  geniusCardsDouble[cardGroup].style.display = "block";
+
+  geniusCards.forEach((element) => {
+    element.style.display = "flex";
+  });
+} else {
+  geniusCardsDouble.forEach((element) => {
+    element.style.display = "block";
+  });
+
+  geniusCards.forEach((element) => {
+    element.style.display = "none";
+  });
+
+  geniusCards[cardGroup].style.display = "flex";
+}
+
+function carousel(direction, list, displayWhenShown) {
   if (direction === FORWARD) {
-    if (direction === FORWARD && cardGroup === 4) {
+    console.log(list.length);
+    if (direction === FORWARD && cardGroup === list.length - 1) {
       return;
     }
     cardGroup++;
-    geniusCards[cardGroup].style.display = "flex";
-    geniusCards[cardGroup - 1].style.display = "none";
+    list[cardGroup].style.display = displayWhenShown;
+    list[cardGroup - 1].style.display = "none";
+    console.log(cardGroup);
     // display carouselgroup according to id
     // use index
     // carouselGroups[cardGroup]
@@ -71,10 +120,12 @@ function carousel(direction) {
       return;
     }
     cardGroup--;
-    geniusCards[cardGroup].style.display = "flex";
-    geniusCards[cardGroup + 1].style.display = "none";
+    list[cardGroup].style.display = displayWhenShown;
+    list[cardGroup + 1].style.display = "none";
+    console.log(cardGroup);
   }
 }
+
 const FORWARD = true;
 const BACKWARD = false;
 // createComponent('card-component', `

@@ -10,7 +10,6 @@ body body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  display: none;
 }
 
 button {
