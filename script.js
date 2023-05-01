@@ -53,6 +53,8 @@ let cardGroup = 0;
 
 let geniusCards = document.querySelectorAll(".carousel-group");
 
+geniusCards[cardGroup].style.display = "flex";
+
 function carousel(direction) {
   if (direction === FORWARD) {
     if (direction === FORWARD && cardGroup === 4) {
@@ -60,12 +62,17 @@ function carousel(direction) {
     }
     cardGroup++;
     geniusCards[cardGroup].style.display = "flex";
+    geniusCards[cardGroup - 1].style.display = "none";
     // display carouselgroup according to id
     // use index
     // carouselGroups[cardGroup]
   } else {
+    if (cardGroup === 0) {
+      return;
+    }
     cardGroup--;
     geniusCards[cardGroup].style.display = "flex";
+    geniusCards[cardGroup + 1].style.display = "none";
   }
 }
 const FORWARD = true;
