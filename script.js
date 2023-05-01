@@ -41,6 +41,93 @@ createComponent(
 `
 );
 
+const carouselGroups = [
+  "cardgroup1",
+  "cardgroup2",
+  "cardgroup3",
+  "cardgroup4",
+  "cardgroup5",
+];
+
+const carouselGroupsDouble = [
+  "doubleCardGroup1",
+  "doubleCardGroup2",
+  "doubleCardGroup3",
+];
+
+let cardGroup = 0;
+
+let geniusCards = document.querySelectorAll(".carousel-group");
+
+let geniusCardsDouble = document.querySelectorAll(".carouselDouble");
+
+// <div class="double"> // display: flex
+//   <div class="single"> // display: flex
+//     <div class="card"></div>
+//     <div class="card"></div>
+//   </div>
+//   <div class="single"> // display: flex
+//     <div class="card"></div>
+//     <div class="card"></div>
+//   </div>
+// </div>
+
+// geniusCards.forEach((element) => {
+//   element.style.display = "none";
+// });
+
+// geniusCardsDouble.forEach((element) => {
+//   element.style.display = "none";
+// });
+
+if (document.URL.includes("geniuses.html")) {
+  geniusCardsDouble.forEach((element) => {
+    element.style.display = "none";
+  });
+
+  geniusCardsDouble[cardGroup].style.display = "block";
+
+  geniusCards.forEach((element) => {
+    element.style.display = "flex";
+  });
+} else {
+  geniusCardsDouble.forEach((element) => {
+    element.style.display = "block";
+  });
+
+  geniusCards.forEach((element) => {
+    element.style.display = "none";
+  });
+
+  geniusCards[cardGroup].style.display = "flex";
+}
+
+function carousel(direction, list, displayWhenShown) {
+  if (direction === FORWARD) {
+    console.log(list.length);
+    if (direction === FORWARD && cardGroup === list.length - 1) {
+      return;
+    }
+    cardGroup++;
+    list[cardGroup].style.display = displayWhenShown;
+    list[cardGroup - 1].style.display = "none";
+    console.log(cardGroup);
+    // display carouselgroup according to id
+    // use index
+    // carouselGroups[cardGroup]
+  } else {
+    if (cardGroup === 0) {
+      return;
+    }
+    cardGroup--;
+    list[cardGroup].style.display = displayWhenShown;
+    list[cardGroup + 1].style.display = "none";
+    console.log(cardGroup);
+  }
+}
+
+const FORWARD = true;
+const BACKWARD = false;
 // createComponent('card-component', `
 //     <div class="template-div">
 //         <h1 class="template-header">Header in template</h1>
