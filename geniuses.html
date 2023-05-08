@@ -31,17 +31,27 @@
     <nav-bar>
       <div class="bar"></div>
     </nav-bar>
+
     <header class="titlebox">
       <h1>About the Geniuses</h1>
     </header>
 
     <div class="geniusbody">
-      <button onclick="carousel(FORWARD, geniusCardsDouble, 'block')">
-        forward
-      </button>
-      <button onclick="carousel(BACKWARD, geniusCardsDouble, 'block')">
-        backward
-      </button>
+      <div class="geniusButtonsContainer">
+        <span
+          onclick="carousel(FORWARD, geniusCardsDouble, 'block')"
+          class="geniusCardsButton"
+        >
+          forward
+        </span>
+        <span
+          onclick="carousel(BACKWARD, geniusCardsDouble, 'block')"
+          class="geniusCardsButton"
+        >
+          backward
+        </span>
+      </div>
+
       <div class="carousel">
         <div class="carouselDouble" id="doubleCardGroup1">
           <div class="carousel-group" id="cardgroup1">

@@ -8,10 +8,11 @@ body {
 }
 
 .carousel-group {
-  padding: 16px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 button {
@@ -79,7 +80,12 @@ button {
   justify-content: space-evenly;
   gap: 5px;
 }
-
+.geniusCardButton {
+  width: 45%;
+  height: 40px;
+  margin: 2px;
+  font-size: 15px;
+}
 .genius-card-content .card-button {
   align-self: flex-end;
   width: 30%;
@@ -144,17 +150,17 @@ footer {
 }
 
 div.card-text {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 div.card-header {
   margin-top: 6px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .card-genius {
-  padding: 20px;
+  padding: 8px;
   align-items: center;
 }
 
@@ -233,4 +239,18 @@ nav button {
   .hamburger {
     display: block;
   }
+}
+
+.geniusButtonsContainer {
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.geniusCardsButton {
+  padding: 10px;
+}
+
+.geniusbody {
+  padding: 50px;
 }
