@@ -36,59 +36,150 @@
     </header>
 
     <div class="geniusbody">
+      <button onclick="carousel(FORWARD, geniusCardsDouble, 'block')">
+        forward
+      </button>
+      <button onclick="carousel(BACKWARD, geniusCardsDouble, 'block')">
+        backward
+      </button>
+      <div class="carousel">
+        <div class="carouselDouble" id="doubleCardGroup1">
+          <div class="carousel-group" id="cardgroup1">
+            <genius-card class="card-genius">
+              <div slot="Genius Name">Dr. Joy Buolamwinu</div>
+              <img
+                slot="Genius Image"
+                src="images/joy/desktop_card.png"
+                class="card-image card-image-borderradius"
+              />
+            </genius-card>
+            <genius-card class="card-genius">
+              <div slot="Genius Name">Millie Dresselhaus</div>
+              <img
+                slot="Genius Image"
+                src="images/dressel/desktop_card.png"
+                class="card-image card-image-borderradius"
+              />
+            </genius-card>
+            <genius-card class="card-genius">
+              <div slot="Genius Name">Sal Khan</div>
+              <img
+                slot="Genius Image"
+                src="images/khan/desktop_card.png"
+                class="card-image card-image-borderradius"
+              />
+            </genius-card>
+          </div>
+
+          <div class="carousel-group" id="cardgroup2">
+            <genius-card class="card-genius">
+              <div slot="Genius Name">Dr. Danielle Wood</div>
+              <img
+                slot="Genius Image"
+                src="images/wood/desktop_card.png"
+                class="card-image card-image-borderradius"
+              />
+            </genius-card>
+            <genius-card class="card-genius">
+              <div slot="Genius Name">Dr. Sabrina Gonzalez Pasterski</div>
+              <img
+                slot="Genius Image"
+                src="images/pasterski/desktop_card.png"
+                class="card-image card-image-borderradius"
+              />
+            </genius-card>
+            <genius-card class="card-genius">
+              <div slot="Genius Name">Dr. Ronald McNair</div>
+              <img
+                slot="Genius Image"
+                src="images/mcnair/desktop_card.png"
+                class="card-image card-image-borderradius"
+              />
+            </genius-card>
+          </div>
+        </div>
+        <div class="carouselDouble" id="doubleCardGroup2">
+          <div class="carousel-group" id="cardgroup3">
+            <genius-card class="card-genius">
+              <div slot="Genius Name">Bob Moses</div>
+              <img
+                slot="Genius Image"
+                src="images/moses/desktop_card.png"
+                class="card-image card-image-borderradius"
+              />
+            </genius-card>
+            <genius-card class="card-genius">
+              <div slot="Genius Name">Rep. Ayanna Pressley</div>
+              <img
+                slot="Genius Image"
+                src="images/pressley/REP. AYANNA PRESSLEY Deskop Card_REP. AYANNA PRESSLEY Mobile Card.png"
+                class="card-image card-image-borderradius"
+              />
+            </genius-card>
+            <genius-card class="card-genius">
+              <div slot="Genius Name">Dr. Shirley Jackson</div>
+              <img
+                slot="Genius Image"
+                src="images/jackson/desktop_card.png"
+                class="card-image card-image-borderradius"
+              />
+            </genius-card>
+          </div>
+
+          <div class="carousel-group" id="cardgroup4">
+            <genius-card class="card-genius">
+              <div slot="Genius Name">Dr. Sangeeta Bhatia</div>
+              <img
+                slot="Genius Image"
+                src="images/bhatia/desktop_card.png"
+                class="card-image card-image-borderradius"
+              />
+            </genius-card>
+            <genius-card class="card-genius">
+              <div slot="Genius Name">Dr. Edwin Land</div>
+              <img
+                slot="Genius Image"
+                src="images/land/desktop_card.png"
+                class="card-image card-image-borderradius"
+              />
+            </genius-card>
+            <genius-card class="card-genius">
+              <div slot="Genius Name">Mary Gray</div>
+              <img
+                slot="Genius Image"
+                src="images/gray/desktop_card.png"
+                class="card-image card-image-borderradius"
+              />
+            </genius-card>
+          </div>
+        </div>
+
+        <div class="carouselDouble" id="doubleCardGroup3">
+          <div class="carousel-group" id="cardgroup5">
+            <genius-card class="card-genius">
+              <div slot="Genius Name">Margret Hamilton</div>
+              <img
+                slot="Genius Image"
+                src="images/hamilton/desktop_card.png"
+                class="card-image card-image-borderradius"
+              />
+            </genius-card>
+            <genius-card class="card-genius">
+              <div slot="Genius Name">Millie Dresselhaus</div>
+              <img
+                slot="Genius Image"
+                src="images/dressel/desktop_card.png"
+                class="card-image card-image-borderradius"
+              />
+            </genius-card>
+          </div>
+        </div>
+      </div>
       <!-- <card-component>
         <div slot="paragraph-text">
           <span>This is card 1</span>
         </div>
       </card-component> -->
-      <genius-card class="card-genius">
-        <div slot="Genius Name">Dr. Joy Buolamwinu</div>
-        <img
-          slot="Genius Image"
-          src="images/joy/desktop_card.png"
-          class="card-image card-image-borderradius"
-        />
-      </genius-card>
-      <genius-card class="card-genius">
-        <div slot="Genius Name">Millie Dresselhaus</div>
-        <img
-          slot="Genius Image"
-          src="images/dressel/desktop_card.png"
-          class="card-image card-image-borderradius"
-        />
-      </genius-card>
-      <genius-card class="card-genius">
-        <div slot="Genius Name">Sal Khan</div>
-        <img
-          slot="Genius Image"
-          src="images/khan/desktop_card.png"
-          class="card-image card-image-borderradius"
-        />
-      </genius-card>
-      <genius-card class="card-genius">
-        <div slot="Genius Name">Dr. Danielle Wood</div>
-        <img
-          slot="Genius Image"
-          src="images/wood/desktop_card.png"
-          class="card-image card-image-borderradius"
-        />
-      </genius-card>
-      <genius-card class="card-genius">
-        <div slot="Genius Name">Dr. Sabrina Gonzalez Pasterski</div>
-        <img
-          slot="Genius Image"
-          src="images/pasterski/desktop_card.png"
-          class="card-image card-image-borderradius"
-        />
-      </genius-card>
-      <genius-card class="card-genius">
-        <div slot="Genius Name">Dr. Ronald McNair</div>
-        <img
-          slot="Genius Image"
-          src="images/mcnair/desktop_card.png"
-          class="card-image card-image-borderradius"
-        />
-      </genius-card>
     </div>
 
     <hr class="pagebreak" />
