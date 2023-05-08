@@ -51,7 +51,7 @@ createComponent(
   <div class="card-content genius-card-content">
     <div class="card-text">Spring 2023</div>
     <div class="card-header"><slot name="Genius Name"></slot></div>
-    <button class="card-button">View <ion-icon name="arrow-forward-outline"></ion-icon></button>
+    <button class="card-button geniusCardButton">View <ion-icon name="arrow-forward-outline"></ion-icon></button>
   </div>
 </div>`
 );
