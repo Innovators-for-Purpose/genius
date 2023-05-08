@@ -18,8 +18,16 @@ function createComponent(templateId, template) {
         linkElem.setAttribute("rel", "stylesheet");
         linkElem.setAttribute("href", "style-index.css");
 
+        const iconlinkElem = document.createElement("link");
+        iconlinkElem.setAttribute(
+          "href",
+          "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+        );
+        iconlinkElem.setAttribute("rel", "stylesheet");
+
         // Attach the created element to the shadow DOM
         shadowRoot.appendChild(linkElem);
+        shadowRoot.appendChild(iconlinkElem);
         //         <link rel="preconnect" href="https://fonts.googleapis.com">
         // <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         // <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet"></link>
@@ -54,10 +62,21 @@ createComponent(
   <div class="navcontent">
      <p>GENIUS WITHIN</p>
     <div class="navlinks">
-      <a href="/">About the Geniuses</a>
-      <a href="">The Making of</a>
+    <div class="hamburger">
+      <span class="material-symbols-outlined">
+      menu
+      </span>
+      <div class="dropdown">
+        <ul>
+          <li><a href="">About the Geniuses</a></li>
+          <li><a href="">The Making of</a></li>
+        </ul>
+    </div>
+      <button><a href="/">About the Geniuses</a></button>
+      <button><a href="">The Making of</a></button>
       </div>
   </div>
+
   </nav>`
 );
 

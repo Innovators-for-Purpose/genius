@@ -190,8 +190,15 @@ nav button {
   transition: 0.5s;
 }
 
-.navlinks a:hover {
-  font-size: 17px;
+.navlinks button {
+  background: none;
+  border: none;
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+.navlinks button:hover {
+  transform: scale(1.1);
   transition: 0.5s;
 }
 
@@ -208,4 +215,22 @@ nav button {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.bar {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .navlinks button {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }
