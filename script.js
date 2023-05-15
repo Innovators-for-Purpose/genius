@@ -60,7 +60,9 @@ createComponent(
   "nav-bar",
   `<nav>
   <div class="navcontent">
+    <a href="index.html">
      <p>GENIUS WITHIN</p>
+    </a>
     <div class="navlinks">
     <div class="hamburger">
       <span class="material-symbols-outlined">

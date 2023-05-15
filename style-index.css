@@ -101,6 +101,13 @@ button {
   transition: 0.5s;
 }
 
+a:visited {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
 .pagebreak {
   margin: 31px 0;
   border: 1px solid #e5e5e5;
@@ -164,6 +171,21 @@ div.card-header {
   align-items: center;
 }
 
+.geniusButtonsContainer {
+  width: 67%;
+  display: flex;
+  margin: auto;
+  justify-content: end; /* ask, how can i make it so that the container doesn't stretch further beyound the page? as well the text does not match on windows */
+}
+
+.geniusCardsButton {
+  padding: 10px;
+}
+
+.geniusbody {
+  padding: 50px;
+}
+
 /* nav */
 
 nav {
@@ -177,6 +199,14 @@ nav {
 
 nav p {
   font-family: "futura";
+}
+
+nav a:visited {
+  text-decoration: none;
+}
+
+nav a:link {
+  text-decoration: none;
 }
 
 nav button {
@@ -239,18 +269,4 @@ nav button {
   .hamburger {
     display: block;
   }
-}
-
-.geniusButtonsContainer {
-  width: 95%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.geniusCardsButton {
-  padding: 10px;
-}
-
-.geniusbody {
-  padding: 50px;
 }
