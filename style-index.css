@@ -201,6 +201,14 @@ nav p {
   font-family: "futura";
 }
 
+nav a:visited {
+  text-decoration: none;
+}
+
+nav a:link {
+  text-decoration: none;
+}
+
 nav button {
   background-color: rgb(192, 138, 249);
   margin-right: 16px;
