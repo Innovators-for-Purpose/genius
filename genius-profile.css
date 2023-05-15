@@ -240,6 +240,7 @@ nav button {
   align-items: center;
   justify-content: center;
   border: 2px green solid; /* issue with things turning to a column when you change groups */
+  width: 100%;
 }
 
 .card {
@@ -278,6 +279,7 @@ nav button {
   border-top-right-radius: 10px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  width: 100%;
 }
 
 .geniusCardButton {
@@ -321,7 +323,6 @@ a:link {
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  width: 396px;
 }
 
 .genius-card-content {
@@ -343,6 +344,7 @@ div.card-header {
 .card-genius {
   padding: 8px;
   align-items: center;
+  width: 20%;
 }
 
 .geniusButtonsContainer {
