@@ -60,23 +60,9 @@ createComponent(
   "nav-bar",
   `<nav>
   <div class="navcontent">
-    <a href="index.html">
-     <p>GENIUS WITHIN</p>
-    </a>
-    <div class="navlinks">
-    <div class="hamburger">
-      <span class="material-symbols-outlined">
-      menu
-      </span>
-      <div class="dropdown">
-        <ul>
-          <li><a href="">About the Geniuses</a></li>
-          <li><a href="">The Making of</a></li>
-        </ul>
-    </div>
-      <button><a href="/">About the Geniuses</a></button>
-      <button><a href="">The Making of</a></button>
-      </div>
+    <div class="homelink"><a href="index.html">GENIUS WITHIN</a></div>
+
+    <div class="navlink"><button><a href="/">About the Geniuses</a></button></div>
   </div>
 
   </nav>`
