@@ -49,9 +49,8 @@ button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  border: 2px green solid; /* issue with things turning to a column when you change groups */
+  align-items: flex-start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -180,7 +179,8 @@ div.card-header {
 .card-genius {
   padding: 8px;
   align-items: center;
-  width: 20%;
+  flex: 1 1 0px;
+  max-width: 320px;
 }
 
 .geniusButtonsContainer {
