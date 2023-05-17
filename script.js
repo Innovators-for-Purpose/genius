@@ -60,7 +60,7 @@ createComponent(
   "nav-bar",
   `<nav>
   <div class="navcontent">
-    <div class="homelink linkbold"><a href="geniuses.html">GENIUS WITHIN</a></div>
+    <div class="homelink linkbold"><a href="index.html">GENIUS WITHIN</a></div>
 
     <div class="navlink"><a href="geniuses.html">About the Geniuses</a></div>
   </div>
