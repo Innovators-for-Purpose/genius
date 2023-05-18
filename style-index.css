@@ -21,6 +21,7 @@ body {
 
 .titleimage {
   max-height: 900px;
+  object-fit: cover;
 }
 
 h1.titlebox {
@@ -380,6 +381,7 @@ main {
 .model {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   background-color: white;
   border-radius: 10px;
   border: 1px solid rgb(219, 217, 217);
@@ -388,6 +390,8 @@ main {
 
 .model img {
   width: 50%;
+  object-fit: contain;
+  margin: auto;
 }
 
 .model h2 {
@@ -399,6 +403,8 @@ main {
   flex-direction: column;
   flex: 1.5;
   justify-content: center;
+  min-width: 250px;
+  margin-bottom: 20px;
 }
 
 .left p {
@@ -408,6 +414,7 @@ main {
 }
 header img {
   width: 100%;
+  margin-top: 70px;
 }
 
 .video {
