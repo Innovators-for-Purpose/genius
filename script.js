@@ -16,7 +16,7 @@ function createComponent(templateId, template) {
         // Apply external styles to the shadow DOM
         const linkElem = document.createElement("link");
         linkElem.setAttribute("rel", "stylesheet");
-        linkElem.setAttribute("href", "style-index.css");
+        linkElem.setAttribute("href", "/style-index.css");
 
         const iconlinkElem = document.createElement("link");
         iconlinkElem.setAttribute(
@@ -31,6 +31,16 @@ function createComponent(templateId, template) {
         //         <link rel="preconnect" href="https://fonts.googleapis.com">
         // <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         // <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet"></link>
+        console.log("Looking for buttonlink");
+        let link = this.attributes.buttonlink?.value;
+        if (link) {
+          console.log("Found buttonlink: ", link);
+          const cardLink = shadowRoot.getElementById("card-link");
+          console.log("<a> tag found: ", cardLink);
+          cardLink.href = link;
+          // get reference to <a>
+          // set href attribute on <a> to "link"
+        }
       }
     }
   );
@@ -51,7 +61,9 @@ createComponent(
   <div class="card-content genius-card-content">
     <div class="card-text">Spring 2023</div>
     <div class="card-header"><slot name="Genius Name"></slot></div>
-    <button class="card-button geniusCardButton">View <ion-icon name="arrow-forward-outline"></ion-icon></button>
+    <a class="card-button geniusCardButton" id="card-link">
+      View <ion-icon name="arrow-forward-outline"></ion-icon> 
+    </a>
   </div>
 </div>`
 );
@@ -60,12 +72,28 @@ createComponent(
   "nav-bar",
   `<nav>
   <div class="navcontent">
-    <div class="homelink linkbold"><a href="geniuses.html">GENIUS WITHIN</a></div>
+    <div class="homelink linkbold"><a href="/index.html">GENIUS WITHIN</a></div>
 
-    <div class="navlink"><a href="geniuses.html">About the Geniuses</a></div>
+    <div class="navlink"><a href="/geniuses.html">About the Geniuses</a></div>
   </div>
 
   </nav>`
+);
+
+createComponent(
+  "genius-footer",
+  `<footer>
+      <ul> <h3 id="centering2">Innovators for Purpose</h3>
+        <li><a href="???">Website</a></li>
+        <li><a href="???">Instagram</a></li>
+        <li><a href="???">Twitter</a></li>
+      </ul>
+      <ul> <h3 id="centering">2 Blocks</h3>
+        <li><a href="???">Website</a></li>
+        <li><a href="???">Book</a></li>
+        <li><a href="???">Podcast</a></li>
+      </ul>
+  </footer>`
 );
 
 const carouselGroups = [

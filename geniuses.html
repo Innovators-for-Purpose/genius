@@ -15,8 +15,8 @@
       src="https://kit.fontawesome.com/yourcode.js"
       crossorigin="anonymous"
     ></script>
-    <link href="style-index.css" rel="stylesheet" />
-    <script src="script.js" type="text/javascript" defer></script>
+    <link href="/style-index.css" rel="stylesheet" />
+    <script src="/script.js" type="text/javascript" defer></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -37,20 +37,20 @@
     </nav-bar>
 
     <header class="titlebox">
-      <h1>About the Geniuses</h1>
+      <h1 class="titlebox">About the Geniuses</h1>
     </header>
 
     <div class="geniusbody">
       <div class="carousel">
         <div class="geniusButtonsContainer">
           <span
-            onclick="carousel(FORWARD, geniusCardsDouble, 'block')"
+            onclick="carousel(BACKWARD, geniusCardsDouble, 'block')"
             class="geniusCardsButton material-symbols-outlined"
           >
             arrow_back_ios
           </span>
           <span
-            onclick="carousel(BACKWARD, geniusCardsDouble, 'block')"
+            onclick="carousel(FORWARD, geniusCardsDouble, 'block')"
             class="geniusCardsButton material-symbols-outlined"
           >
             arrow_forward_ios
@@ -59,7 +59,7 @@
 
         <div class="carouselDouble" id="doubleCardGroup1">
           <div class="carousel-group" id="cardgroup1">
-            <genius-card class="card-genius">
+            <genius-card class="card-genius" buttonlink="/geniuses/joy.html">
               <div slot="Genius Name">Dr. Joy Buolamwinu</div>
               <img
                 slot="Genius Image"
@@ -67,7 +67,10 @@
                 class="card-image card-image-borderradius"
               />
             </genius-card>
-            <genius-card class="card-genius">
+            <genius-card
+              class="card-genius"
+              buttonlink="/geniuses/dressel.html"
+            >
               <div slot="Genius Name">Millie Dresselhaus</div>
               <img
                 slot="Genius Image"
@@ -75,7 +78,7 @@
                 class="card-image card-image-borderradius"
               />
             </genius-card>
-            <genius-card class="card-genius">
+            <genius-card class="card-genius" buttonlink="/geniuses/khan.html">
               <div slot="Genius Name">Sal Khan</div>
               <img
                 slot="Genius Image"
@@ -86,7 +89,7 @@
           </div>
 
           <div class="carousel-group" id="cardgroup2">
-            <genius-card class="card-genius">
+            <genius-card class="card-genius" buttonlink="/geniuses/wood.html">
               <div slot="Genius Name">Dr. Danielle Wood</div>
               <img
                 slot="Genius Image"
@@ -94,7 +97,10 @@
                 class="card-image card-image-borderradius"
               />
             </genius-card>
-            <genius-card class="card-genius">
+            <genius-card
+              class="card-genius"
+              buttonlink="/geniuses/pasterski.html"
+            >
               <div slot="Genius Name">Dr. Sabrina Gonzalez Pasterski</div>
               <img
                 slot="Genius Image"
@@ -102,7 +108,7 @@
                 class="card-image card-image-borderradius"
               />
             </genius-card>
-            <genius-card class="card-genius">
+            <genius-card class="card-genius" buttonlink="/geniuses/mcnair.html">
               <div slot="Genius Name">Dr. Ronald McNair</div>
               <img
                 slot="Genius Image"
@@ -114,7 +120,7 @@
         </div>
         <div class="carouselDouble" id="doubleCardGroup2">
           <div class="carousel-group" id="cardgroup3">
-            <genius-card class="card-genius">
+            <genius-card class="card-genius" buttonlink="/geniuses/moses.html">
               <div slot="Genius Name">Bob Moses</div>
               <img
                 slot="Genius Image"
@@ -122,7 +128,10 @@
                 class="card-image card-image-borderradius"
               />
             </genius-card>
-            <genius-card class="card-genius">
+            <genius-card
+              class="card-genius"
+              buttonlink="/geniuses/pressley.html"
+            >
               <div slot="Genius Name">Rep. Ayanna Pressley</div>
               <img
                 slot="Genius Image"
@@ -130,7 +139,10 @@
                 class="card-image card-image-borderradius"
               />
             </genius-card>
-            <genius-card class="card-genius">
+            <genius-card
+              class="card-genius"
+              buttonlink="/geniuses/jackson.html"
+            >
               <div slot="Genius Name">Dr. Shirley Jackson</div>
               <img
                 slot="Genius Image"
@@ -141,7 +153,7 @@
           </div>
 
           <div class="carousel-group" id="cardgroup4">
-            <genius-card class="card-genius">
+            <genius-card class="card-genius" buttonlink="/geniuses/bhatia.html">
               <div slot="Genius Name">Dr. Sangeeta Bhatia</div>
               <img
                 slot="Genius Image"
@@ -149,7 +161,7 @@
                 class="card-image card-image-borderradius"
               />
             </genius-card>
-            <genius-card class="card-genius">
+            <genius-card class="card-genius" buttonlink="/geniuses/land.html">
               <div slot="Genius Name">Dr. Edwin Land</div>
               <img
                 slot="Genius Image"
@@ -157,7 +169,7 @@
                 class="card-image card-image-borderradius"
               />
             </genius-card>
-            <genius-card class="card-genius">
+            <genius-card class="card-genius" buttonlink="/geniuses/gray.html">
               <div slot="Genius Name">Mary Gray</div>
               <img
                 slot="Genius Image"
@@ -170,19 +182,14 @@
 
         <div class="carouselDouble" id="doubleCardGroup3">
           <div class="carousel-group" id="cardgroup5">
-            <genius-card class="card-genius">
+            <genius-card
+              class="card-genius"
+              buttonlink="/geniuses/hamilton.html"
+            >
               <div slot="Genius Name">Margret Hamilton</div>
               <img
                 slot="Genius Image"
                 src="images/hamilton/desktop_card.png"
-                class="card-image card-image-borderradius"
-              />
-            </genius-card>
-            <genius-card class="card-genius">
-              <div slot="Genius Name">Millie Dresselhaus</div>
-              <img
-                slot="Genius Image"
-                src="images/dressel/desktop_card.png"
                 class="card-image card-image-borderradius"
               />
             </genius-card>
@@ -195,6 +202,6 @@
           <span>This is card 1</span>
         </div>
       </card-component> -->
-    <footer></footer>
+    <genius-footer></genius-footer>
   </body>
 </html>
