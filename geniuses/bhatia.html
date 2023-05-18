@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/script.js" type="text/javascript" defer></script>
+    <link href="/style-index.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav-bar>
+      <div class="bar"></div>
+    </nav-bar>
+    <div class="container">
+      <header>
+        <img src="/images/bhatia/desktop_banner.png" />
+      </header>
+      <main>
+        <div class="container-header">
+          <h3>Sangeeta N. Bhatia MD, PhD</h3>
+          <p>
+            Sangeeta N. Bhatia MD, PhD is an inventor, Massachusetts Institute
+            of Technology professor and biotech entrepreneur who adapts
+            technologies developed in the computer industry for medical
+            innovation. At MIT, she is the John J. and Dorothy Wilson Professor
+            or Engineering, Director of the Marble Center for Cancer
+            Nanomedicine and Investigator of the Howard Hughes Medical
+            Institute. Trained as both a physician and engineer, Sangeeta’s
+            laboratory leverages miniaturization tools from the computer
+            industry for medical innovation with applications in liver disease,
+            cancer and infectious diseases. She and her over 150 trainees have
+            contributed to more than 50 issued or pending patents, launched
+            multiple biotechnology companies, and published more than 200
+            peer-reviewed papers. Bhatia was the 25th person in history to be an
+            elected member of all three US National Academies: NAS, NAM, and
+            NAE. She has been honored with the Lemelson-MIT Prize (known as the
+            “Oscar” for inventors), the Heinz Medal, and the Othmer Gold Medal
+            for groundbreaking inventions and advocacy for women in STEM fields.
+            She has presented her vision for the application of engineering
+            solutions to solve medical problems on international stages such as
+            the World Economic Forum, TED, the Gates Grand Challenges, and the
+            Biden Cancer Moonshot. She currently serves as a Trustee at Brown
+            University and Director at Vertex Pharmaceuticals. <br /><br />
+            Sangeeta was born in Boston, the daughter of Indian immigrants,
+            educated in the public schools. She and her husband have two
+            daughters. She loves Boston sports teams, yoga, travel, good books
+            and everything coffee.
+          </p>
+        </div>
+        <div class="model">
+          <div class="left">
+            <h2>3D Model</h2>
+            <p>
+              This model shows a scientific beaker with a formula inside.<br />
+              This is the kind of equipment that Sangeeta N. Bhatia is
+              surrounded by on a daily basis. <br />
+              She is an MIT professor, biotech entrepreneur, and biomedical
+              researcher who focuses on repurposing computer industry
+              innovations for medical advancement. <br />
+              Her education has allowed her to win prizes and awards, like the
+              Lemelson-MIT Prize, which is compared to Oscars for inventors.<br />
+              Her myriad of achievements prove how much of a prominent figure
+              she is in her line of work.
+            </p>
+            <button class="genius-page-button">
+              <a href="/index.html">Learn More</a>
+            </button>
+          </div>
+          <img src="/images/bhatia/desktop_card.png" />
+        </div>
+        <div class="video"></div>
+        <div class="carousel">
+          <div class="geniusButtonsContainer">
+            <span
+              onclick="carousel(BACKWARD, geniusCards, 'flex')"
+              class="geniusCardsButton material-symbols-outlined"
+            >
+              arrow_back_ios
+            </span>
+            <span
+              onclick="carousel(FORWARD, geniusCards, 'flex')"
+              class="geniusCardsButton material-symbols-outlined"
+            >
+              arrow_forward_ios
+            </span>
+          </div>
+
+          <div class="carouselDouble" id="doubleCardGroup1">
+            <div class="carousel-group" id="cardgroup1">
+              <genius-card class="card-genius" buttonlink="/geniuses/joy.html">
+                <div slot="Genius Name">Dr. Joy Buolamwinu</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/joy/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+              <genius-card
+                class="card-genius"
+                buttonlink="/geniuses/dressel.html"
+              >
+                <div slot="Genius Name">Millie Dresselhaus</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/dressel/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+              <genius-card class="card-genius" buttonlink="/geniuses/khan.html">
+                <div slot="Genius Name">Sal Khan</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/khan/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+            </div>
+
+            <div class="carousel-group" id="cardgroup2">
+              <genius-card class="card-genius" buttonlink="/geniuses/wood.html">
+                <div slot="Genius Name">Dr. Danielle Wood</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/wood/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+              <genius-card
+                class="card-genius"
+                buttonlink="/geniuses/pasterski.html"
+              >
+                <div slot="Genius Name">Dr. Sabrina Gonzalez Pasterski</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/pasterski/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+              <genius-card
+                class="card-genius"
+                buttonlink="/geniuses/mcnair.html"
+              >
+                <div slot="Genius Name">Dr. Ronald McNair</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/mcnair/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+            </div>
+          </div>
+          <div class="carouselDouble" id="doubleCardGroup2">
+            <div class="carousel-group" id="cardgroup3">
+              <genius-card
+                class="card-genius"
+                buttonlink="/geniuses/moses.html"
+              >
+                <div slot="Genius Name">Bob Moses</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/moses/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+              <genius-card
+                class="card-genius"
+                buttonlink="/geniuses/pressley.html"
+              >
+                <div slot="Genius Name">Rep. Ayanna Pressley</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/pressley/REP. AYANNA PRESSLEY Deskop Card_REP. AYANNA PRESSLEY Mobile Card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+              <genius-card
+                class="card-genius"
+                buttonlink="/geniuses/jackson.html"
+              >
+                <div slot="Genius Name">Dr. Shirley Jackson</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/jackson/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+            </div>
+
+            <div class="carousel-group" id="cardgroup4">
+              <genius-card
+                class="card-genius"
+                buttonlink="/geniuses/bhatia.html"
+              >
+                <div slot="Genius Name">Dr. Sangeeta Bhatia</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/bhatia/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+              <genius-card class="card-genius" buttonlink="/geniuses/land.html">
+                <div slot="Genius Name">Dr. Edwin Land</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/land/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+              <genius-card class="card-genius" buttonlink="/geniuses/gray.html">
+                <div slot="Genius Name">Mary Gray</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/gray/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+            </div>
+          </div>
+
+          <div class="carouselDouble" id="doubleCardGroup3">
+            <div class="carousel-group" id="cardgroup5">
+              <genius-card
+                class="card-genius"
+                buttonlink="/geniuses/hamilton.html"
+              >
+                <div slot="Genius Name">Margaret Hamilton</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/hamilton/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+            </div>
+          </div>
+        </div>
+      </main>
+      <genius-footer></genius-footer>
+    </div>
+  </body>
+</html>

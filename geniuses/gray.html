@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/script.js" type="text/javascript" defer></script>
+    <link href="/style-index.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav-bar>
+      <div class="bar"></div>
+    </nav-bar>
+    <div class="container">
+      <header>
+        <img src="/images/gray/desktop_banner.png" />
+      </header>
+      <main>
+        <div class="container-header">
+          <h3>Mary L. Gray</h3>
+          <p>
+            Mary L. Gray is Senior Principal Researcher at Microsoft Research
+            and Faculty Associate at Harvard University’s Berkman Klein Center
+            for Internet and Society. She maintains a faculty position in the
+            Luddy School of Informatics, Computing, and Engineering with
+            affiliations in Anthropology and Gender Studies at Indiana
+            University. Mary, an anthropologist and media scholar by training,
+            focuses on how people’s everyday uses of technologies transform
+            labor, identity, and human rights. Mary’s research has been covered
+            by popular press venues, including The Guardian, El Pais, The New
+            York Times, The Los Angeles Times, Nature, The Economist, Harvard
+            Business Review, The Chronicle of Higher Education, and Forbes
+            Magazine. Her publications include books, such as Out in the
+            Country: Youth, Media, and Queer Visibility in Rural America and
+            Ghost Work: How to Stop Silicon Valley from Building a New Global
+            Underclass as well as scholarly journal articles that span computer
+            science, LGBTQ studies, and science technology studies. Mary is also
+            recognized as a leading expert in the emerging field of AI and
+            ethics, particularly research at the intersections of computer and
+            social sciences. She sits on several boards, including Public
+            Responsibility in Medicine and Research and the California
+            Governor’s Council of Economic Advisors, in addition to chairing the
+            Microsoft Research Ethics Review Program—the only
+            federally-registered institutional review board of its kind in the
+            tech industry. In 2020, Mary was named a MacArthur Fellow for her
+            contributions to anthropology and the study of technology, digital
+            economies, and society.
+          </p>
+        </div>
+        <div class="model">
+          <div class="left">
+            <h2>3D Model</h2>
+            <p>
+              Mary L. Gray is a Senior Principal Researcher at Microsoft
+              Research, and a Faculty Associate at Harvard University’s Berkman
+              Klein Center for Internet and Society. <br />
+              She has written several books about the struggles of queer people
+              and their connection to technology. <br />
+              Mary is also recognized as a leading expert in the emerging field
+              of AI and ethics.<br />
+              She sits on several boards, including Public Responsibility in
+              Medicine and Research and others in addition to chairing the
+              Microsoft Research Ethics Review Program.<br />
+              Her contribution to society has enabled the tech industry to
+              continue advancing.
+            </p>
+            <button class="genius-page-button">
+              <a href="/index.html">Learn More</a>
+            </button>
+          </div>
+          <img src="/images/gray/desktop_card.png" />
+        </div>
+        <div class="video"></div>
+        <div class="carousel">
+          <div class="geniusButtonsContainer">
+            <span
+              onclick="carousel(BACKWARD, geniusCards, 'flex')"
+              class="geniusCardsButton material-symbols-outlined"
+            >
+              arrow_back_ios
+            </span>
+            <span
+              onclick="carousel(FORWARD, geniusCards, 'flex')"
+              class="geniusCardsButton material-symbols-outlined"
+            >
+              arrow_forward_ios
+            </span>
+          </div>
+
+          <div class="carouselDouble" id="doubleCardGroup1">
+            <div class="carousel-group" id="cardgroup1">
+              <genius-card class="card-genius" buttonlink="/geniuses/joy.html">
+                <div slot="Genius Name">Dr. Joy Buolamwinu</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/joy/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+              <genius-card
+                class="card-genius"
+                buttonlink="/geniuses/dressel.html"
+              >
+                <div slot="Genius Name">Millie Dresselhaus</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/dressel/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+              <genius-card class="card-genius" buttonlink="/geniuses/khan.html">
+                <div slot="Genius Name">Sal Khan</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/khan/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+            </div>
+
+            <div class="carousel-group" id="cardgroup2">
+              <genius-card class="card-genius" buttonlink="/geniuses/wood.html">
+                <div slot="Genius Name">Dr. Danielle Wood</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/wood/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+              <genius-card
+                class="card-genius"
+                buttonlink="/geniuses/pasterski.html"
+              >
+                <div slot="Genius Name">Dr. Sabrina Gonzalez Pasterski</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/pasterski/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+              <genius-card
+                class="card-genius"
+                buttonlink="/geniuses/mcnair.html"
+              >
+                <div slot="Genius Name">Dr. Ronald McNair</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/mcnair/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+            </div>
+          </div>
+          <div class="carouselDouble" id="doubleCardGroup2">
+            <div class="carousel-group" id="cardgroup3">
+              <genius-card
+                class="card-genius"
+                buttonlink="/geniuses/moses.html"
+              >
+                <div slot="Genius Name">Bob Moses</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/moses/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+              <genius-card
+                class="card-genius"
+                buttonlink="/geniuses/pressley.html"
+              >
+                <div slot="Genius Name">Rep. Ayanna Pressley</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/pressley/REP. AYANNA PRESSLEY Deskop Card_REP. AYANNA PRESSLEY Mobile Card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+              <genius-card
+                class="card-genius"
+                buttonlink="/geniuses/jackson.html"
+              >
+                <div slot="Genius Name">Dr. Shirley Jackson</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/jackson/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+            </div>
+
+            <div class="carousel-group" id="cardgroup4">
+              <genius-card
+                class="card-genius"
+                buttonlink="/geniuses/bhatia.html"
+              >
+                <div slot="Genius Name">Dr. Sangeeta Bhatia</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/bhatia/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+              <genius-card class="card-genius" buttonlink="/geniuses/land.html">
+                <div slot="Genius Name">Dr. Edwin Land</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/land/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+              <genius-card class="card-genius" buttonlink="/geniuses/gray.html">
+                <div slot="Genius Name">Mary Gray</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/gray/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+            </div>
+          </div>
+
+          <div class="carouselDouble" id="doubleCardGroup3">
+            <div class="carousel-group" id="cardgroup5">
+              <genius-card
+                class="card-genius"
+                buttonlink="/geniuses/hamilton.html"
+              >
+                <div slot="Genius Name">Margaret Hamilton</div>
+                <img
+                  slot="Genius Image"
+                  src="/images/hamilton/desktop_card.png"
+                  class="card-image card-image-borderradius"
+                />
+              </genius-card>
+            </div>
+          </div>
+        </div>
+      </main>
+      <genius-footer></genius-footer>
+    </div>
+  </body>
+</html>
