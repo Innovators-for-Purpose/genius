@@ -83,15 +83,33 @@ createComponent(
 createComponent(
   "genius-footer",
   `<footer>
-      <ul> <h3 id="centering2">Innovators for Purpose</h3>
-        <li><a href="???">Website</a></li>
-        <li><a href="???">Instagram</a></li>
-        <li><a href="???">Twitter</a></li>
+      <ul><h3>Innovators for Purpose</h3>
+       <li id="footerlist">91 1st Street #425475</li>
+       <li id="footerlist">Cambridge, MA 02141-1804</li>
+       <li id="footerlist">857-285-3842</li>
+       <li id="footerquote">Empowering Our Next Generation of Innovators.</li>
+       <li id="copyright">© 2014-22 INNOVATORS FOR PURPOSE</li>
       </ul>
-      <ul> <h3 id="centering">2 Blocks</h3>
-        <li><a href="???">Website</a></li>
-        <li><a href="???">Book</a></li>
-        <li><a href="???">Podcast</a></li>
+      <ul><h3>Info</h3>
+        <li><a href="https://innovatorsforpurpose.org/our-story">Our Story</a></li>
+        <li><a href="https://innovatorsforpurpose.org/our-programs">Our Programs</a></li>
+        <li><a href="https://innovatorsforpurpose.org/our-work">Our Work</a></li>
+        <li><a href="https://innovatorsforpurpose.org/blog">News + Updates</a></li>
+      </ul>
+      <ul><h3>Action</h3>
+        <li><a href="https://innovatorsforpurpose.org/donate">Donate</a></li>
+        <li><a href="https://innovatorsforpurpose.org/contact">Contact</a></li>
+      </ul>
+      <ul><h3>Join Our Email List</h3>
+        <li><i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+        <li><button div="footerbutton"><a href="https://innovatorsforpurpose.us5.list-manage.com/subscribe?u=ceaa442c0a87d88191f55f02b&id=586ff77dec">Subscribe</a></button></li>
+        <a href="https://www.instagram.com/innovatorsforpurpose/">
+          <img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-white-glyph.png" height="30px" width="30px" class="footer-icon">
+        </a>
+        <a href="https://www.linkedin.com/company/innovators-for-purpose#:~:text=About%20us,impact%20through%20Design%20and%20STEM.">
+         <img src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/linkedin-icon-18-256.png" height="30px" width="30px" class="footer-icon">
+       </a>
+        </li>
       </ul>
   </footer>`
 );
