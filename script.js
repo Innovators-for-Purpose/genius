@@ -46,6 +46,93 @@ function createComponent(templateId, template) {
   );
 }
 
+function CreateWebPageComponent(name, header_image,title, description, third_dimension_model_text, third_dimension_model_image){
+
+
+
+}
+
+header_image = document.createElement("img")
+title = document.createElement("h3")
+description = document.createElement("p")
+third_dimension_model_text = document.createElement("p")
+third_dimension_model_image = document.createElement("img")
+let content = {
+  'joy': {
+    header_image: "/images/joy/desktop_banner.png",
+    title: "Joy Buolamwini",
+    description: description.textContent = "Joy Buolamwini is a Black Ghanaian-Canadian American computer
+    scientist and digital activist. She was born 1989 in Edmonton,
+    Canada and grew up in Mississippi. She attended Cordova High School
+    and earned her PhD at MIT. She is known for her Ted Talks and her
+    spoken word titled “AI, Ain’t I A Woman?” She is known as the “Poet
+    of Code”. <br /><br />
+
+    When Joy was a grad student at MIT media lab in 2015, she first
+    discovered that artificial intelligence can be harmful and
+    discriminative in many ways. Joy noticed that some facial analysis
+    software could not detect her dark skin. <br /><br />
+
+    AI systems have been created by mostly white men, so there tends to
+    be a bias in the technology that causes it to easily recognize white
+    men, but not so much people of color and women. This bias in
+    artificial intelligence leads to discrimination. Since then, she has
+    gender prejudices in AI services. <br /><br />
+
+    While filming “Coded Bias”, Joy thought about what people would gain
+    from this. She figured they would learn how tech directly impacts
+    people on earth, and how the biases in technology affect people
+    daily. In the documentary, you see a scene where a Black 14 year-old
+    boy in a school uniform is being stopped with his friends by the
+    police; The police are looking for a suspect, and used facial
+    recognition that pinned the boy as the supposed offender. After
+    finger printing and ruling him out as their suspect, they left the
+    poor boy shaking and scared. <br /><br />
+
+    The police and FBI use facial recognition to try and scan for
+    criminals, but as you can tell it is not a very accurate process to
+    go through. This is just one example of the bias in AI technology
+    that can potentially ruin an innocent person’s life. <br /><br />
+
+    Joy is still a researcher at the MIT Media Lab where, she continues
+    to identify bias in algorithms and to develop practices for
+    accountability during their design."
+</div>
+<div class="model">
+  <div class="left">
+    <h2>3D Model</h2>
+    <p>
+      This model shows an unbalance, similar to the one that is severely
+      prevalent in the accuracy of facial recognition software. <br />
+      This was what Joy Boulamwini discovered during her time in MIT.
+      <br />
+      She made that her main focus, and used her research to fuel her
+      thesis, which uncovered large racial and gender biases in AI
+      services from companies like Microsoft, IBM, and Amazon. <br />
+      With her help, facial recognition will be turned into a tool that
+      is fair for everyone, and not something that is filled with human
+      bias.
+    third_dimension_model_image: null
+  },
+  '/pressley.html': {
+    header_image: null,
+    title: null,
+    description: null,
+    third_dimension_model_text: null,
+    third_dimension_model_image: null
+  }
+}
+
+switch(window.location.pathname){
+  case '/joy.html':
+    createComponent('img', {src: content['/joy.html'].header_image});
+    createComponent('h1', content['/joy.html'].title);
+    break;
+  case '/pressley.html':
+    break;
+}
+
+
 function setActiveClass(path, element) {
   if (window.location.pathname === path) {
     element.classList.add("active");
