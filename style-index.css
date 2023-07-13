@@ -544,13 +544,10 @@ main {
   width: 50%;
 }
 
-<<<<<<< HEAD
-=======
 .right img {
   border-radius: 16px;
 }
 
->>>>>>> 496586e (fixed up model div in profiles)
 .left {
   display: flex;
   flex-direction: column;
