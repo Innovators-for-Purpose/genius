@@ -57,6 +57,7 @@ title = document.createElement("h3")
 description = document.createElement("p")
 third_dimension_model_text = document.createElement("p")
 third_dimension_model_image = document.createElement("img")
+
 let content = {
   'joy': {
     header_image: "/images/joy/desktop_banner.png",
@@ -90,85 +91,64 @@ let content = {
     header_image: '/images/gray/desktop_banner.png',
     title: 'Mary L. Gray',
     description: 'Mary L. Gray is Senior Principal Researcher at Microsoft Research and Faculty Associate at Harvard University’s Berkman Klein Center for Internet and Society. She maintains a faculty position in the Luddy School of Informatics, Computing, and Engineering with affiliations in Anthropology and Gender Studies at Indiana University. Mary, an anthropologist and media scholar by training, focuses on how people’s everyday uses of technologies transform labor, identity, and human rights. Mary’s research has been covered by popular press venues, including The Guardian, El Pais, The New York Times, The Los Angeles Times, Nature, The Economist, Harvard Business Review, The Chronicle of Higher Education, and Forbes Magazine. Her publications include books, such as Out in the Country: Youth, Media, and Queer Visibility in Rural America and Ghost Work: How to Stop Silicon Valley from Building a New Global Underclass as well as scholarly journal articles that span computer science, LGBTQ studies, and science technology studies. Mary is also recognized as a leading expert in the emerging field of AI and ethics, particularly research at the intersections of computer and social sciences. She sits on several boards, including Public Responsibility in Medicine and Research and the California Governor’s Council of Economic Advisors, in addition to chairing the Microsoft Research Ethics Review Program—the only federally-registered institutional review board of its kind in the tech industry. In 2020, Mary was named a MacArthur Fellow for her contributions to anthropology and the study of technology, digital economies, and society.',
-    third_dimension_model_text: '',
+    third_dimension_model_text: 'Mary L. Gray is a Senior Principal Researcher at Microsoft Research, and a Faculty Associate at Harvard University’s Berkman Klein Center for Internet and Society. <br /> She has written several books about the struggles of queer people and their connection to technology. <br /> Mary is also recognized as a leading expert in the emerging field of AI and ethics.<br /> She sits on several boards, including Public Responsibility in Medicine and Research and others in addition to chairing the Microsoft Research Ethics Review Program.<br /> Her contribution to society has enabled the tech industry to continue advancing.',
+    third_dimension_model_image: '/images/gray/desktop_card.png'
+  },
+  'hamilton': {
+    header_image: '/images/hamilton/desktop_banner.png',
+    title: 'Margeret Hamilton',
+    description: null,
+    third_dimension_model_text: 'This model shows a rocket and a moon. <br /> Both are concepts Margaret Hamilton is extremely familiar with, as she was one of the many software engineers that worked on Apollo 11, which sent the first men to the moon. <br /> As soon as she heard MIT was looking for people to build software for "sending man to the moon", she joined the MIT/NASA/Apollo project starting with the unmanned missions.<br /> She created the ability for the software to communicate asynchronously in real-time with the astronaut within a distributed system-of-systems environment. <br />Hamilton received the NASA Exceptional Space Act Award and the Presidential Medal of Freedom awarded by Barack Obama in 2016. <br /> Her breakthrough work at such a pivotal moment in history should always be remembered and celebrated.',
+    third_dimension_model_image: '/images/hamilton/desktop_card.png'
+  },
+  'jackson': {
+    header_image: '/images/jackson/desktop_banner.png',
+    title: 'Dr. Shirley Jackson',
+    description: null,
+    third_dimension_model_text: "This model shows a Newton's cradle, which shows the conservation of energy and conservation of momentum. Both are key elements of physics, which is what Shirley Jackson studied at MIT. <br /> She worked as a research associate in theoretical physics at the Fermi National Accelerator Laboratory, or Fermilab. <br /> She became the first African American woman to receive a doctorate at MIT. <br /> She is now a Physicist and has used that to invent that caller ID and call waiting on smart technology.<br /> She is also the first African American president of Rensselaer Polytechnic Institute, and received the national medal of science in 2016.",
     third_dimension_model_image: ''
   },
-  '': {
-    header_image: '',
-    title: '',
-    description: '',
-    third_dimension_model_text: '',
-    third_dimension_model_image: ''
+  'khan': {
+    header_image: '/images/khan/desktop_banner.png',
+    title: 'Sal Khan (Salaman Khan, CEO of Khan Academy)',
+    description: "Salaman Amin Khan, born October 11, 1976 is the founder of Khan Academy. Khan Academy is a free, non- profit educational app and organization Sal produced with over 6,500+ video lessons teaching individuals step by step about academic subjects, originally focusing on mathematics and science. <br /><br /> He is also the founder of Schoolhouse.world, Khan Lab School, and Khan World School, which are all nonprofits focused on making education accessible for all. <br /><br /> When Khan was in highschool (at Grace King High School), he took upper-level mathematics courses at the University of New Orleans. He graduated as class valedictorian in 1994. <br /><br /> He attended the Massachusetts Institute of Technology in Cambridge, MA, where he developed math software for children with ADHD and tutored fourth- and seventh-grade public school students in Boston. Khan graduated with his Bachelor and Master degrees for electrical engineering and computer science. In 1998, he got another bachelor's degree in mathematics. Khan also holds a Master of Business Administration from Harvard business school. <br /><br /> In his early career years, Khan was a summertime intern at the Palo Alto Research Center and from 2003 to 2009, he worked as a hedge fund analyst at Connective Capital Management. He now continues his work of providing accessible education to students all over.",
+    third_dimension_model_text: 'This model highlights Khan Academy, which was founded and is run by Sal Khan. Khan Academy is a nonprofit organization with a mission to provide free, world class education for anyone, anywhere. <br /> Khan Academy’s platform includes more than 70,000 practice problems as well as videos and articles that cover a range of K–12 subjects. <br /> The organization partners with school districts across the country and around the world that serve students who are historically under-resourced. <br /> Sal Khan has created a company that’s sole purpose is to help people, which is a great reflection of his own character. <br />',
+    third_dimension_model_image: '/images/khan/desktop_card.png'
   },
-  '': {
-    header_image: '',
-    title: '',
-    description: '',
-    third_dimension_model_text: '',
-    third_dimension_model_image: ''
+  'land': {
+    header_image: '/images/land/desktop_banner.png',
+    title: 'Dr. Edwin Land',
+    description: null,
+    third_dimension_model_text: "This model shows a polaroid camera, which was first invented by Edwin Land, as part of the Polaroid Corporation. <br /> This breakthrough in technology was created because of his daughter's demand to see an image taken of her instantly. <br /> It was created by Land figuring out how to bring the exposed negative and positive paper through rollers. When the camera’s button was clicked, the shutter on the camera opened, which allowed light to enter it, hitting the photosensitive film, and recreating the image in front of the camera. <br /> This technology cut the 2 hour wait to develop images that had been the norm and set the stage for instant hand held cameras and eventually smartphone cameras to make photographing easy and accessible.",
+    third_dimension_model_image: '/images/land/desktop_card.png'
   },
-  '': {
-    header_image: '',
-    title: '',
-    description: '',
-    third_dimension_model_text: '',
-    third_dimension_model_image: ''
+  'mcnair': {
+    header_image: '/images/mcnair/desktop_banner.png',
+    title: 'Dr. Ronald McNair',
+    description: null,
+    third_dimension_model_text: null,
+    third_dimension_model_image: '/images/mcnair/desktop_card.png'
   },
-  '': {
-    header_image: '',
-    title: '',
-    description: '',
-    third_dimension_model_text: '',
-    third_dimension_model_image: ''
+  'moses': {
+    header_image: '/images/moses/desktop_banner.png',
+    title: 'Bob Moses',
+    description: "Bob Moses (January 23, 1935 – July 25, 2021) was born and raised in Harlem, NY, where he attended public schools. He received a B.A. in Philosophy from Hamilton College in 1956, and received an M.A. in Philosophy from Harvard University in 1957. Moses directed the Student Non-Violent Coordinating Committee’s Mississippi Voter Registration Project from 1961-1964; was co-Director of the Council of Federated Organizations 1962-1964, and was a lead organizer for the 1964 Mississippi “Freedom” Summer Project, parachuting Mississippi Freedom Democratic Party to 1964 National Democratic Convention in Atlantic City. Moses taught mathematics at the Samé School in Tanzania, East Africa from 1969 – 1976, when he returned to the United States and re-entered the doctoral program in Philosophy at Harvard. <br /><br /> A MacArthur Foundation Fellow 1982-1987, he used his fellowship to begin the Algebra Project, which uses mathematics as organizing tool for quality education for all children in America. With support of the National Science Foundation the Algebra Project works with middle and high school students who previously performed in the lowest quartile on standardized exams, proposing that they attain a high school math benchmark: graduate on time in four years, ready to do college math for college credit. Moses co-authored with Charles E. Cobb, Jr., the book Radical Equations—Civil Rights from Mississippi to the Algebra Project (Beacon Press, 2001); and co-edited with Theresa Perry, et al., of Quality Education as a Constitutional Right-creating a grassroots movement to transform public schools (Beacon, 2010). <br /><br /> Moses was the Distinguished Visitor for the Center for African American Studies at Princeton University 2011-2012, and adjunct lecturer at NYU School of Law from 2012 – 2016. He served on the Education Advisory Committee of the Mathematical Sciences Research Institute from 2004 to 2021. In May 2016, the University of North Carolina press published Dr. Laura Visser-Maessen’s book, Robert Parris Moses – a life in civil rights and leadership at the grassroots. He received numerous honorary doctorate degrees, delivered keynote speeches and workshops nationwide, and served as principal investigator on eight National Science Foundation mathematics education research awards.",
+    third_dimension_model_text: null,
+    third_dimension_model_image: '/images/moses/desktop_card.png'
   },
-  '': {
-    header_image: '',
-    title: '',
-    description: '',
-    third_dimension_model_text: '',
-    third_dimension_model_image: ''
+  'pasterski': {
+    header_image: '/images/pasterski/desktop_banner.png',
+    title: 'Dr. Sabrina Gonzalez Pasterski',
+    description: "Sabrina Pasterski is a proud first-generation Cuban-American & Chicago Public Schools alumna who, by 16, had built & flown her own airplane. She became the first MIT freshman named to the NASA January Operational Internship and earned the inaugural MIT Freshman Entrepreneurship Award. After a summer at Phantom-Works, excelling at MIT and being hired by CERN-CMS, she was named a Lindau Nobel Young Researcher. She graduated #1 at MIT-Physics, matriculated into Harvard’s PhD program and was awarded her SB while still a teenager. Sabrina was named to Scientific American’s 30 under 30 in 2012 as well as the 2015 Forbes 30 under 30 Science list. <br /><br /> At age twelve, Sabrina started building a two-seat one-hundred horsepower light sport aircraft. At fourteen, she flew her Cessna 150 solo in Canada and completed the build of her experimental aircraft. She conducted her first US solo flight in the airplane she built at sixteen and graduated MIT while still a teenager. She earned her PhD at Harvard under Andy Strominger. Half way through her post-doc at the Princeton Center for Theoretical Science, she was targeted by Brown University and the Perimeter Institute for open faculty positions—she declined Brown and accepted Perimeter becoming a professor of theoretical physics at age twenty-seven.",
+    third_dimension_model_text: null,
+    third_dimension_model_image: '/images/pasterski/desktop_card.png'
   },
-  '': {
-    header_image: '',
-    title: '',
-    description: '',
-    third_dimension_model_text: '',
-    third_dimension_model_image: ''
-  },
-  '': {
-    header_image: '',
-    title: '',
-    description: '',
-    third_dimension_model_text: '',
-    third_dimension_model_image: ''
-  },
-  '': {
-    header_image: '',
-    title: '',
-    description: '',
-    third_dimension_model_text: '',
-    third_dimension_model_image: ''
-  },
-  '': {
-    header_image: '',
-    title: '',
-    description: '',
-    third_dimension_model_text: '',
-    third_dimension_model_image: ''
-  },
-  '': {
-    header_image: '',
-    title: '',
-    description: '',
-    third_dimension_model_text: '',
-    third_dimension_model_image: ''
-  },
-  '': {
-    header_image: '',
-    title: '',
-    description: '',
-    third_dimension_model_text: '',
-    third_dimension_model_image: ''
+  'wood': {
+    header_image: '/images/wood/desktop_banner.png',
+    title: 'Dr. Danielle Wood',
+    description: null,
+    third_dimension_model_text: "This model shows a pyramid with numerous images regarding NASA and space, which are heavy influences in Danielle Wood’s career as an Assistant Professor in Media Arts & Sciences at MIT. <br /> Within the MIT Media Lab, Prof. Wood leads the Space Enabled Research Group which seeks to advance justice in Earth's complex systems, using designs enabled by space. <br /> Wood is a scholar of societal development with a background that includes satellite design, earth science applications, systems engineering, and technology policy. In her research, Prof. Wood applies these skills to design innovative systems that harness space technology to address development challenges around the world.",
+    third_dimension_model_image: '/images/wood/desktop_card.png'
   }
 }
 
