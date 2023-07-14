@@ -46,8 +46,10 @@ function createComponent(templateId, template) {
   );
 }
 
+
 function insertImage(image_element, content, place_inserted){
   // creates source of image tag and inserts it into certain place
+  // insert alt text
   let area = document.querySelector(place_inserted)
   let image = image_element.setAttribute(src, content)
   area.appendChild(image)
@@ -57,6 +59,16 @@ function insertText(text_element, content, place_inserted){
   let area = document.querySelector(place_inserted)
   let text = text_element.textContent(content)
   area.appendChild(text)
+}
+
+function insertIntoPage(image, name, element, content, place_inserted){
+  if (image) {
+    insertImage(element, content, place_inserted)
+  } else {
+    insertText(element, content, place_inserted)
+  }
+  location.href = location.href + "/" + name
+
 }
 
 header_image = document.createElement("img")
