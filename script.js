@@ -170,15 +170,16 @@ let content = {
     third_dimension_model_image: '/images/wood/desktop_card.png'
   }
 }
-
-switch(window.location.pathname){
-  case '/joy.html':
-    createComponent('img', {src: content['/joy.html'].header_image});
-    createComponent('h1', content['/joy.html'].title);
-    break;
-  case '/pressley.html':
-    break;
+for (let key = 0; key <= content.length; key++) {
+  switch (content){
+    case key == "joy":
+    
+      break;
+    case '/pressley.html':
+      break;
+  }
 }
+
 
 
 function setActiveClass(path, element) {
