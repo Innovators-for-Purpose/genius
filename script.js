@@ -61,15 +61,6 @@ function insertText(text_element, content, place_inserted){
   area.appendChild(text)
 }
 
-function insertIntoPage(image, name, element, content, place_inserted){
-  if (image) {
-    insertImage(element, content, place_inserted)
-  } else {
-    insertText(element, content, place_inserted)
-  }
-  location.href = location.href + "/" + name
-
-}
 
 header_image = document.createElement("img")
 title = document.createElement("h3")
@@ -170,10 +161,17 @@ let content = {
     third_dimension_model_image: '/images/wood/desktop_card.png'
   }
 }
+
+Object.keys(content).forEach(name => {
+  
+});
+
 for (let key = 0; key <= content.length; key++) {
+  
   switch (content){
-    case key == "joy":
-    
+    case key == "joy" && genius-card.getAttribute("onclick") == "joy":
+      location.href = location.href + "/joy"
+      insertImage(header_image, )
       break;
     case '/pressley.html':
       break;
