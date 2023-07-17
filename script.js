@@ -46,27 +46,66 @@ function createComponent(templateId, template) {
   );
 }
 
-
+function insertElement(element, content, place_inserted, image) {
+  if (content == null) {
+    content = "";
+  }
+  let area = document.querySelector(place_inserted);
+  if (area == null) {
+    area = document.getElementsByClassName(place_inserted);
+  }
+  if (image == true) {
+    let image = element.setAttribute("src", content);
+    area.appendChild(image);
+  }
+  let text = element.textContent(content);
+  area.appendChild(text);
+}
 function insertImage(image_element, content, place_inserted){
   // creates source of image tag and inserts it into certain place
   // insert alt text
-  let area = document.querySelector(place_inserted)
-  let image = image_element.setAttribute(src, content)
-  area.appendChild(image)
+  if (content == null) {
+    content = ""
+  }
+  let area = document.querySelector(place_inserted);
+  let image = image_element.setAttribute(src, content);
+  area.appendChild(image);
 }
 
 function insertText(text_element, content, place_inserted){
-  let area = document.querySelector(place_inserted)
-  let text = text_element.textContent(content)
-  area.appendChild(text)
+  if (content == null) {
+    content = ""
+  }
+  let area = document.querySelector(place_inserted);
+  let text = text_element.textContent(content);
+  area.appendChild(text);
 }
 
+function insertTextByClass(text_element, content, place_inserted){
+  if (content == null) {
+    content = ""
+  }
+  let area = document.getElementsByClassName(place_inserted);
+  let text = text_element.textContent(content);
+  area.appendChild(text);
+}
 
-header_image = document.createElement("img")
-title = document.createElement("h3")
-description = document.createElement("p")
-third_dimension_model_text = document.createElement("p")
-third_dimension_model_image = document.createElement("img")
+function insertImageByClass(image_element, content, place_inserted){
+  // creates source of image tag and inserts it into certain place
+  // insert alt text
+  if (content == null) {
+    content = ""
+  }
+  let area = document.getElementsByClassName(place_inserted);
+  let image = image_element.setAttribute(src, content);
+  area.appendChild(image);
+}
+
+header_image = document.createElement("img");
+title = document.createElement("h3");
+description = document.createElement("p");
+third_dimension_model_text = document.createElement("p");
+third_dimension_model_image = document.createElement("img");
 
 let content = {
   'joy': {
@@ -160,25 +199,106 @@ let content = {
     third_dimension_model_text: "This model shows a pyramid with numerous images regarding NASA and space, which are heavy influences in Danielle Wood’s career as an Assistant Professor in Media Arts & Sciences at MIT. <br /> Within the MIT Media Lab, Prof. Wood leads the Space Enabled Research Group which seeks to advance justice in Earth's complex systems, using designs enabled by space. <br /> Wood is a scholar of societal development with a background that includes satellite design, earth science applications, systems engineering, and technology policy. In her research, Prof. Wood applies these skills to design innovative systems that harness space technology to address development challenges around the world.",
     third_dimension_model_image: '/images/wood/desktop_card.png'
   }
-}
-
-Object.keys(content).forEach(name => {
-  
-});
-
-for (let key = 0; key <= content.length; key++) {
-  
-  switch (content){
-    case key == "joy" && genius-card.getAttribute("onclick") == "joy":
-      location.href = location.href + "/joy"
-      insertImage(header_image, )
-      break;
-    case '/pressley.html':
-      break;
+};
+genius_card = document.querySelector("genius-card");
+if (genius_card.getAtrribute("onclick") == true) {
+  switch (content) {
+      case "joy":
+        location.href = location.href + "/joy";
+        insertImage(header_image, content[0][header_image], header);
+        insertTextByClass(title, content[0][title], container_header);
+        insertTextByClass(description, content[0][description], container_header);
+        insertImageByClass(third_dimension_model_image, content[0][third_dimension_model_image], model);
+        insertTextByClass(third_dimension_model_text, content[0][third_dimension_model_text], left);
+      case 'pressley':
+        location.href = location.href + "/pressley";
+        insertImage(header_image, content[1][header_image], header);
+        insertTextByClass(title, content[1][title], container_header);
+        insertTextByClass(description, content[1][description], container_header);
+        insertImageByClass(third_dimension_model_image, content[1][third_dimension_model_image], model);
+        insertTextByClass(third_dimension_model_text, content[1][third_dimension_model_text], left);
+      case 'bhatia':
+        location.href = location.href + "/bhatia";
+        insertImage(header_image, content[2][header_image], header);
+        insertTextByClass(title, content[2][title], container_header);
+        insertTextByClass(description, content[2][description], container_header);
+        insertImageByClass(third_dimension_model_image, content[2][third_dimension_model_image], model);
+        insertTextByClass(third_dimension_model_text, content[2][third_dimension_model_text], left);
+      case 'dressel':
+        location.href = location.href + "/dressel";
+        insertImage(header_image, content[3][header_image], header);
+        insertTextByClass(title, content[3][title], container_header);
+        insertTextByClass(description, content[3][description], container_header);
+        insertImageByClass(third_dimension_model_image, content[3][third_dimension_model_image], model);
+        insertTextByClass(third_dimension_model_text, content[3][third_dimension_model_text], left);
+        break;
+      case 'gray':
+        location.href = location.href + "/gray";
+        insertImage(header_image, content[4][header_image], header);
+        insertTextByClass(title, content[4][title], container_header);
+        insertTextByClass(description, content[4][description], container_header);
+        insertImageByClass(third_dimension_model_image, content[4][third_dimension_model_image], model);
+        insertTextByClass(third_dimension_model_text, content[4][third_dimension_model_text], left);
+      case 'hamilton':
+        location.href = location.href + "/hamilton";
+        insertImage(header_image, content[5][header_image], header);
+        insertTextByClass(title, content[5][title], container_header);
+        insertTextByClass(description, content[5][description], container_header);
+        insertImageByClass(third_dimension_model_image, content[5][third_dimension_model_image], model);
+        insertTextByClass(third_dimension_model_text, content[5][third_dimension_model_text], left);
+      case 'jackson':
+        location.href = location.href + "/jackson";
+        insertImage(header_image, content[6][header_image], header);
+        insertTextByClass(title, content[6][title], container_header);
+        insertTextByClass(description, content[6][description], container_header);
+        insertImageByClass(third_dimension_model_image, content[6][third_dimension_model_image], model);
+        insertTextByClass(third_dimension_model_text, content[6][third_dimension_model_text], left);
+        break;
+      case 'khan':
+        location.href = location.href + "/khan";
+        insertImage(header_image, content[7][header_image], header);
+        insertTextByClass(title, content[7][title], container_header);
+        insertTextByClass(description, content[7][description], container_header);
+        insertImageByClass(third_dimension_model_image, content[7][third_dimension_model_image], model);
+        insertTextByClass(third_dimension_model_text, content[7][third_dimension_model_text], left);
+        break;
+      case 'land':
+        location.href = location.href + "/land";
+        insertImage(header_image, content[8][header_image], header);
+        insertTextByClass(title, content[8][title], container_header);
+        insertTextByClass(description, content[8][description], container_header);
+        insertImageByClass(third_dimension_model_image, content[8][third_dimension_model_image], model);
+        insertTextByClass(third_dimension_model_text, content[8][third_dimension_model_text], left);
+      case 'mcnair':
+        location.href = location.href + "/mcnair";
+        insertImage(header_image, content[9][header_image], header);
+        insertTextByClass(title, content[9][title], container_header);
+        insertTextByClass(description, content[9][description], container_header);
+        insertImageByClass(third_dimension_model_image, content[9][third_dimension_model_image], model);
+        insertTextByClass(third_dimension_model_text, content[9][third_dimension_model_text], left);
+      case 'moses':
+        location.href = location.href + "/moses";
+        insertImage(header_image, content[10][header_image], header);
+        insertTextByClass(title, content[10][title], container_header);
+        insertTextByClass(description, content[10][description], container_header);
+        insertImageByClass(third_dimension_model_image, content[10][third_dimension_model_image], model);
+        insertTextByClass(third_dimension_model_text, content[10][third_dimension_model_text], left);
+      case 'pasterski':
+        location.href = location.href + "/pasterski";
+        insertImage(header_image, content[11][header_image], header);
+        insertTextByClass(title, content[11][title], container_header);
+        insertTextByClass(description, content[11][description], container_header);
+        insertImageByClass(third_dimension_model_image, content[11][third_dimension_model_image], model);
+        insertTextByClass(third_dimension_model_text, content[11][third_dimension_model_text], left);
+      case 'wood':
+        location.href = location.href + "/wood";
+        insertImage(header_image, content[12][header_image], header);
+        insertTextByClass(title, content[12][title], container_header);
+        insertTextByClass(description, content[12][description], container_header);
+        insertImageByClass(third_dimension_model_image, content[12][third_dimension_model_image], model);
+        insertTextByClass(third_dimension_model_text, content[12][third_dimension_model_text], left);
   }
 }
-
-
 
 function setActiveClass(path, element) {
   if (window.location.pathname === path) {
@@ -349,8 +469,8 @@ const BACKWARD = false;
 // `);
 
 // Usage examples:
-{
-  /*
+
+  /* {
 <card-component>
   <div slot="paragraph-text">
     <span>This is card 1</span>
@@ -361,6 +481,4 @@ const BACKWARD = false;
 </card-component>
 <button-component></button-component>
 <button-component></button-component>
-<button-component></button-component>
-*/
-}
+  <button-component></button-component> } */
