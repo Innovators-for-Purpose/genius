@@ -107,7 +107,7 @@ description = document.createElement("p");
 third_dimension_model_text = document.createElement("p");
 third_dimension_model_image = document.createElement("img");
 
-let content = {
+const content = {
   'joy': {
     header_image: "/images/joy/desktop_banner.png",
     title: "Joy Buolamwini",
